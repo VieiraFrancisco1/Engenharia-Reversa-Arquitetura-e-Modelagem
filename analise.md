@@ -43,11 +43,8 @@ Parte 2 – Análise de Arquitetura
 Tipo de arquitetura
 
 O sistema aparenta utilizar uma arquitetura Web Cliente-Servidor.
-
 Possível divisão em camadas
-
 É possível identificar uma estrutura em camadas:
-
 Camada de Apresentação (Frontend)
 Interface do usuário (cardápio, botões, formulários)
 Camada de Lógica (Backend)
@@ -55,11 +52,25 @@ Processamento de pedidos, regras de negócio (ex: escolha de sabores)
 Camada de Dados
 Armazenamento de produtos, pedidos, usuários
 Separação de responsabilidades
-
 Existe uma separação básica de responsabilidades:
-
 Interface cuida da interação com o usuário
 Sistema processa as escolhas
 Dados são armazenados separadamente
-
 Porém, essa separação não é totalmente visível, pois não temos acesso ao código
+
+Parte 3 – Análise de Design
+Coesão
+
+A coesão é boa, pois:
+Cada parte do sistema tem uma função clara
+(ex: tela de produtos, tela de personalização)
+Acoplamento
+O acoplamento parece moderado:
+As funcionalidades dependem umas das outras (ex: produto → carrinho)
+Mas ainda seguem um fluxo organizado
+Separação de responsabilidades
+Existe uma separação razoável:
+Tela de login separada
+Tela de produtos separada
+Sistema de pedidos separado
+Porém, pode haver melhorias internas (não visíveis sem código)

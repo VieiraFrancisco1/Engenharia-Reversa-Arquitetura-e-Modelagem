@@ -14,3 +14,14 @@ Adição de itens ao carrinho
 Visualização do carrinho de compras
 Sistema de login (cliente/admin)
 Exibição de promoções e combos
+
+3. Como o usuário interage com o sistema?
+
+O usuário interage de forma simples e direta:
+Acessa o site
+Navega pelas categorias do cardápio
+Seleciona um produto
+Personaliza o item (ex: tamanho, sabores, adicionais)
+Adiciona ao carrinho
+Finaliza o pedido
+A interface é baseada em cliques, com menus visuais e listas de opções

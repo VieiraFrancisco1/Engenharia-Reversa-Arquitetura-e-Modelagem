@@ -38,3 +38,28 @@ Porções
 Além disso, há separação por:
 Combos
 Promoções
+
+Parte 2 – Análise de Arquitetura
+Tipo de arquitetura
+
+O sistema aparenta utilizar uma arquitetura Web Cliente-Servidor.
+
+Possível divisão em camadas
+
+É possível identificar uma estrutura em camadas:
+
+Camada de Apresentação (Frontend)
+Interface do usuário (cardápio, botões, formulários)
+Camada de Lógica (Backend)
+Processamento de pedidos, regras de negócio (ex: escolha de sabores)
+Camada de Dados
+Armazenamento de produtos, pedidos, usuários
+Separação de responsabilidades
+
+Existe uma separação básica de responsabilidades:
+
+Interface cuida da interação com o usuário
+Sistema processa as escolhas
+Dados são armazenados separadamente
+
+Porém, essa separação não é totalmente visível, pois não temos acesso ao código

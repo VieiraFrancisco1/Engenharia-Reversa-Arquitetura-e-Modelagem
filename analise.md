@@ -74,3 +74,63 @@ Tela de login separada
 Tela de produtos separada
 Sistema de pedidos separado
 Porém, pode haver melhorias internas (não visíveis sem código)
+
+Parte 4 – Padrões de Projeto
+1. O sistema aparenta utilizar padrões?
+
+Mesmo sem acesso ao código, é possível inferir que o sistema utiliza alguns padrões de projeto comuns em aplicações web, com base no comportamento observado:
+
+Organização por telas (interface separada)
+Fluxo estruturado de ações (selecionar → configurar → adicionar ao carrinho)
+Reutilização de componentes (listas de produtos, categorias)
+
+Isso indica o uso implícito de padrões como MVC e possíveis padrões de criação e controle.
+
+2. Onde poderiam existir Factory, Singleton e MVC?
+MVC (Model-View-Controller)
+
+O padrão MVC provavelmente está presente:
+
+Model (Modelo):
+Produtos (pizza, hambúrguer, bebidas)
+Pedido
+Usuário
+View (Visão):
+Telas do sistema (cardápio, carrinho, login)
+Interface visual mostrada nos prints
+Controller (Controle):
+Lógica que processa ações do usuário
+(ex: selecionar sabor, adicionar ao carrinho)
+Factory
+
+O padrão Factory pode ser usado na criação de objetos como:
+
+Produtos diferentes (Pizza, Hambúrguer, Bebida)
+Tipos de pedidos
+
+Exemplo no sistema:
+Ao selecionar uma pizza ou hambúrguer, o sistema pode usar uma fábrica para criar o objeto correto com base na categoria escolhida.
+
+ Singleton
+
+O padrão Singleton pode ser aplicado em:
+
+Carrinho de compras (uma instância por usuário)
+Sessão do usuário logado
+Configurações do sistema
+
+Exemplo:
+O carrinho exibido no canto da tela provavelmente é único durante toda a navegação.
+
+3. Onde poderiam ser aplicados?
+
+Mesmo que não estejam implementados corretamente, os padrões poderiam ser aplicados assim:
+
+MVC:
+Melhorar organização separando claramente interface, lógica e dados
+Factory:
+Criar produtos dinamicamente (Pizza, Combo, Bebida) sem depender de muitos “ifs”
+Singleton:
+Garantir uma única instância para:
+Carrinho
+Sessão do usuário

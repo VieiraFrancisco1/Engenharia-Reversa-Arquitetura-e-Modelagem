@@ -25,3 +25,16 @@ Personaliza o item (ex: tamanho, sabores, adicionais)
 Adiciona ao carrinho
 Finaliza o pedido
 A interface é baseada em cliques, com menus visuais e listas de opções
+
+4. Como os produtos estão organizados?
+
+Os produtos estão organizados em categorias, como:
+Pizzas (divididas por tamanho: P, M, G, GG)
+Esfirras (doces e salgadas)
+Hambúrgueres artesanais
+Sanduíches
+Bebidas (sucos, refrigerantes, vitaminas)
+Porções
+Além disso, há separação por:
+Combos
+Promoções
